@@ -90,7 +90,8 @@ PRODUCT_COPY_FILES += \
 # Vold
 #
 PRODUCT_COPY_FILES += \
-    device/samsung/moment/prebuilt/moment/vold/vold.fstab:system/etc/vold.fstab
+    device/samsung/moment/prebuilt/moment/vold/vold.fstab:system/etc/vold.fstab \
+    device/samsung/moment/prebuilt/moment/vovld/vold.conf:system/etc/vold.conf
 
 #
 # RIL
