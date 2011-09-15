@@ -63,16 +63,21 @@ BOARD_USES_GENERIC_AUDIO := false
 BOARD_USES_LIBSECRIL_STUB := true
 
 BOARD_WPA_SUPPLICANT_DRIVER := WEXT
-WPA_SUPPLICANT_VERSION      := VER_0_5_X
+WPA_SUPPLICANT_VERSION      := VER_0_6_X
 BOARD_WLAN_DEVICE           := eth0
 WIFI_DRIVER_MODULE_PATH     := "/lib/modules/dhd.ko"
-WIFI_DRIVER_FW_STA_PATH     := "/system/etc/rtecdc.bin"
-WIFI_DRIVER_FW_AP_PATH      := "/system/etc/rtecdc_apsta.bin"
-WIFI_DRIVER_MODULE_ARG      := "firmware_path=/system/etc/rtecdc.bin nvram_path=/system/etc/nvram.txt"
+WIFI_DRIVER_FW_STA_PATH     := "/system/etc/wifi/bcm4329_sta.bin"
+WIFI_DRIVER_FW_AP_PATH      := "/system/etc/wifi/bcm4329_aps.bin"
+WIFI_DRIVER_MODULE_ARG      := "firmware_path=/system/etc/wifi/bcm4329_mfg.bin nvram_path=/system/etc/wifi/nvram_mfg.txt"
 WIFI_DRIVER_MODULE_NAME     := "dhd"
+CONFIG_DRIVER_WEXT          := true
 
 BOARD_HAVE_BLUETOOTH     := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 
 BOARD_GPS_LIBRARIES := libsecgps libsecril-client
 BOARD_USES_GPSSHIM := true
+
+# Video fix
+BUILD_PV_VIDEO_ENCODERS	    := 1
+
