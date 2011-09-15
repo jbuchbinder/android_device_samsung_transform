@@ -22,13 +22,13 @@
 # against the traditional rules of inheritance).
 
 # inherit from the proprietary version
--include vendor/samsung/moment/BoardConfigVendor.mk
+-include vendor/samsung/transform/BoardConfigVendor.mk
 
 TARGET_CPU_ABI := armeabi
 TARGET_ARCH_VARIANT := armv6-vfp
 TARGET_ARCH_VARIANT_CPU := arm1176jzf-s
 
-TARGET_BOOTLOADER_BOARD_NAME := SPH-M900
+TARGET_BOOTLOADER_BOARD_NAME := SPH-M920
 TARGET_BOARD_PLATFORM := s3c6410
 
 TARGET_NO_RECOVERY := true
