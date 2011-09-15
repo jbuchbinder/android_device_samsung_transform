@@ -112,9 +112,9 @@ PRODUCT_COPY_FILES += \
     device/samsung/transform/prebuilt/common/xbin/powertop:system/xbin/powertop \
     device/samsung/transform/prebuilt/common/xbin/openvpn-up.sh:system/xbin/openvpn-up.sh
 
-SPICA_WITH_GOOGLE:=true
+TRANSFORM_WITH_GOOGLE:=true
 # I'll always build with gapps :)
-ifdef SPICA_WITH_GOOGLE
+ifdef TRANSFORM_WITH_GOOGLE
 PRODUCT_COPY_FILES += \
     vendor/transform/proprietary/CarHomeLauncher.apk:system/app/CarHomeLauncher.apk \
     vendor/transform/proprietary/FOTAKill.apk:system/app/FOTAKill.apk \

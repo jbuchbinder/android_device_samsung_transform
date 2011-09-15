@@ -69,14 +69,14 @@ PRODUCT_COPY_FILES += \
     device/samsung/transform/prebuilt/transform/wifi/bcm_supp.conf:system/etc/bcm_supp.conf \
     device/samsung/transform/prebuilt/transform/wifi/wifi.conf:system/etc/wifi.conf \
     device/samsung/transform/prebuilt/transform/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-    device/samsung/spica/prebuilt/spica/wifi/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
-    device/samsung/spica/prebuilt/spica/wifi/wlservice:system/bin/wlservice
+    device/samsung/transform/prebuilt/transform/wifi/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
+    device/samsung/transform/prebuilt/transform/wifi/wlservice:system/bin/wlservice
 
 #
 # Display (3D)
 #
 #PRODUCT_COPY_FILES += \
-#    device/samsung/spica/prebuilt/spica/fimg-libs/egl.cfg:system/lib/egl/egl.cfg
+#    device/samsung/transform/prebuilt/transform/fimg-libs/egl.cfg:system/lib/egl/egl.cfg
 
 #
 # Keys
@@ -97,17 +97,17 @@ PRODUCT_COPY_FILES += \
 # RIL
 #
 PRODUCT_COPY_FILES += \
+    device/samsung/transform/prebuilt/transform/ril/libsec-ril.so:system/lib/libsec-ril.so \
+    device/samsung/transform/prebuilt/transform/ril/rild:system/bin/rild
 #    device/samsung/transform/prebuilt/transform/ril/drexe:system/bin/drexe \
 #    device/samsung/transform/prebuilt/transform/ril/efsd:system/bin/efsd \
 #    device/samsung/transform/prebuilt/transform/ril/rilclient-test:system/bin/rilclient-test \
-    device/samsung/transform/prebuilt/transform/ril/libsec-ril.so:system/lib/libsec-ril.so \
-    device/samsung/transform/prebuilt/transform/ril/rild:system/bin/rild
 
 #
 # GSM APN list
 #
 #PRODUCT_COPY_FILES += \
-#    device/samsung/spica/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+#    device/samsung/transform/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 #
 # Audio
