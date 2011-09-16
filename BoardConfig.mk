@@ -24,13 +24,13 @@
 # inherit from the proprietary version
 -include vendor/samsung/transform/BoardConfigVendor.mk
 
+TARGET_BOARD_PLATFORM := s3c6410
+TARGET_ARCH_VARIANT := armv6-vfp
 TARGET_CPU_ABI := armeabi-v6l
 TARGET_CPU_ABI2 := armeabi
-TARGET_ARCH_VARIANT := armv6-vfp
 TARGET_ARCH_VARIANT_CPU := arm1176jzf-s
 
 TARGET_BOOTLOADER_BOARD_NAME := SPH-M920
-TARGET_BOARD_PLATFORM := s3c6410
 
 TARGET_NO_RECOVERY := true
 TARGET_NO_BOOTLOADER := true
